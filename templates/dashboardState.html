@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <title>SPECIFIC STATE</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="centered">
+
+            <label>FROM</label>
+            <input type="datetime-local" name="fromDate" max="" id="fromDate">
+            <label>TO</label>
+            <input type="datetime-local" name="toDate" min="" id="toDate">
+
+            <h2>STATES</h2>
+
+            <p>SELECT PARTICULAR STATE TO GET THE RESULT</p>
+
+            <select id="mySelect" name="dropdown">
+      </select>
+            <button type="button" onclick="specificState()">SUBMIT</button>
+
+            <br><br>
+
+            <textarea id="resultArea" rows="4" cols="50">
+      </textarea>
+
+        </div>
+    </div>
+
+    <script src="static/js/dashboardState.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/datePicker.js"></script>
+
+
+</body>
+
+</html>
