@@ -83,9 +83,9 @@ def get_specific_state(stateName):
 @app.route('/api/v1/statelist', methods=['GET'])
 def statelist():
     try:
-        state_list = state_list.state_list_func()
+        statelist = state_list.state_list_func()
 
-        return jsonify(state_list)
+        return jsonify(statelist)
 
     except Exception as ex:
         print("*******************")
