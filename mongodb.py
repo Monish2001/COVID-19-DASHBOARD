@@ -11,9 +11,9 @@ statelist_table = mydb["statelist"]
 
 
 def insert(myDict, myStateDict):
-    state_list = state_list.state_list_func()
+    statelist = state_list.state_list_func()
 
-    if(myDict["state"] not in state_list):
+    if(myDict["state"] not in statelist):
         statelist_table.insert_one(myStateDict)
         mycol.insert_one(myDict)
     else:
